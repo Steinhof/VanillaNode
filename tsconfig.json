@@ -33,14 +33,11 @@
         "useDefineForClassFields": true,
         "assumeChangesOnlyAffectDirectDependencies": true,
         "lib": [
-            "dom",
-            "dom.iterable",
-            "esnext",
-            "webworker"
+            "esnext"
         ]
     },
     "include": [
-        "./"
+        "./src"
     ],
     "exclude": [
         "node_modules",

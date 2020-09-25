@@ -1,4 +1,4 @@
-import Cache from "../utils/Cache";
+import Cache from "./Cache";
 /* eslint-disable functional/prefer-readonly-type */
 /* eslint-disable functional/immutable-data */
 
@@ -10,12 +10,17 @@ import Cache from "../utils/Cache";
 export const envCache: Cache<string> = new Cache();
 
 const accessEnvHelper = (key: string): string => {
-    const cacheKey = cache[key];
+    const cacheKey: string | undefined = envCache.get(key);
 
-    if (cacheKey !== undefined) {
-        return cacheKey;
+    if (cacheKey === undefined) {
+        const value: string | undefined = process.env[`${key}`];
+
+        envCache.set(key, value);
+
+        return value ?? "";
     }
-    return (cache[key] = process.env[key]);
+
+    return cacheKey;
 };
 
 export default accessEnvHelper;

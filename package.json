@@ -1,0 +1,64 @@
+{
+    "name": "vanilla-node",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node-dev --transpile-only ./src/main.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "sideEffects": false,
+    "engines": {
+        "node": "14.12.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.2.0",
+        "@typescript-eslint/parser": "^4.2.0",
+        "browserslist": "^4.14.4",
+        "eslint": "^7.9.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-airbnb-typescript": "^10.0.0",
+        "eslint-config-galex": "^2.4.5",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-kentcdodds": "^16.0.1",
+        "eslint-config-metarhia": "^7.0.1",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-config-standard-with-typescript": "^19.0.1",
+        "eslint-plugin-compat": "^3.8.0",
+        "eslint-plugin-functional": "^3.0.2",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jest": "^24.0.2",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-no-use-extend-native": "^0.5.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-optimize-regex": "^1.2.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-react": "^7.21.1",
+        "eslint-plugin-react-hooks": "^4.1.2",
+        "eslint-plugin-react-perf": "^3.2.4",
+        "eslint-plugin-security": "^1.4.0",
+        "eslint-plugin-security-node": "^1.0.12",
+        "eslint-plugin-sonarjs": "^0.5.0",
+        "eslint-plugin-sort-keys-fix": "^1.1.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "eslint-plugin-tree-shaking": "^1.8.0",
+        "eslint-plugin-unicorn": "^22.0.0",
+        "eslint-plugin-xss": "^0.1.10",
+        "jest": "^26.4.2",
+        "prettier": "^2.1.2",
+        "ts-node-dev": "^1.0.0-pre.63",
+        "typescript": "^4.0.3"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "pino": "^6.6.1"
+    }
+}

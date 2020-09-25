@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "strictPropertyInitialization": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "pretty": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedParameters": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "alwaysStrict": true,
+        "declaration": true,
+        "target": "esnext",
+        "module": "commonjs",
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "downlevelIteration": true,
+        "allowJs": true,
+        "checkJs": false,
+        "noEmit": true,
+        "useDefineForClassFields": true,
+        "assumeChangesOnlyAffectDirectDependencies": true,
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext",
+            "webworker"
+        ]
+    },
+    "include": [
+        "./"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
